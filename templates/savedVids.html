@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    saved videos
+{% endblock %}
+
+{% block main %}
+
+{%if error is defined%}
+    <div class="alert alert-danger" role="alert">
+      {{error}}
+    </div>
+{%else%}
+    <form action="/saved_videos" method="post">
+{%for link in vidLinks%}
+        <iframe width="560" height="315" src={{link}} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div><button type="submit" name="remove" value={{link}} class="btn btn-danger">remove</input></div>
+{%endfor%}
+    </form>
+{%endif%}
+{% endblock %}

@@ -1,0 +1,23 @@
+{%extends "layout.html"%}
+
+{%block title%}
+    HEADLINES
+{%endblock%}
+
+{%block main%}
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4" align="center">8 of today's BBC headlines</h1>
+  </div>
+</div>
+  <ul class="list-group">
+  {% for item in headlines %}
+    <li class="list-group-item">
+      <a href={{item[1]}}><h4>{{item[0]}}</h4></a>
+    </li>
+  {% endfor %}
+  </ul>
+  </div>
+
+{% endblock %}

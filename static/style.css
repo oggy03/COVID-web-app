@@ -1,0 +1,42 @@
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+table {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.limit {
+    margin-left:auto;
+    margin-right:auto;
+    height:500px;
+    width:500px;
+}
+.right {
+  text-align: left;
+  margin-left: 50px;
+}

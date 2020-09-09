@@ -1,0 +1,32 @@
+{%extends "layout.html"%}
+
+{%block title%}
+    entertainment
+{%endblock%}
+
+{%block main%}
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4" align="center">Find things to do during quarantine</h1>
+      <div align="center">
+      <form action="/entertainment" method="post" id="send">
+        {% if message is not defined %}
+          select a display type:
+        {% endif %}
+        <select name="type">
+          <option class="btn btn-outline-primary" value="video" {%block selectedv%}{%endblock%}>Videos</option>
+          <option class="btn btn-outline-primary" value="text" {%block selected%}{%endblock%}>Text</option>
+        </select>
+        <button type="submit" class="btn btn-outline-primary">GO</button>
+      </form>
+      </div>
+  </div>
+</div>
+<div>
+{%block vids%}{%endblock%}
+{%block text%}{%endblock%}
+</div>
+
+
+{%endblock%}

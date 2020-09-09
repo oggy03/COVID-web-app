@@ -1,0 +1,65 @@
+{%extends "entertainment.html"%}
+{%block selectedv%}selected{%endblock%}
+{%block vids%}
+<h3>Your visual entertainment guide</h3>
+{%if message is defined%}
+    <div class="alert alert-danger" role="alert">
+      {{message}}
+    </div>
+{%endif%}
+<table>
+    <form action="/videos" method="post">
+    <tr>
+        <td>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DHOPWvO3ZcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <div><button type="submit" name="1" value="https://www.youtube.com/embed/DHOPWvO3ZcI" class="btn btn-secondary">save video</input></div>
+
+        </td>
+        <td>
+            <!--full body--><iframe width="560" height="315" src="https://www.youtube.com/embed/ml6cT4AZdqI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div><button type="submit" name="2" value="https://www.youtube.com/embed/ml6cT4AZdqI" class="btn btn-secondary">save video</input></div>
+        </td>
+    </tr>
+    <tr>
+    <td>
+            <!--m--> <iframe width="560" height="315" src="https://www.youtube.com/embed/AuWvMgYv03g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div><button type="submit" name="3" value="https://www.youtube.com/embed/AuWvMgYv03g" class="btn btn-secondary">save video</input></div>
+    </td>
+    <td>
+        <!--scrabble--><iframe width="560" height="315" src="https://www.youtube.com/embed/swlg3vQXboE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div><button type="submit" name="4" value="https://www.youtube.com/embed/swlg3vQXboE" class="btn btn-secondary">save video</input></div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <!--science experiments--><iframe width="560" height="315" src="https://www.youtube.com/embed/6YD2Pw9R7jY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div><button type="submit" name="5" value="https://www.youtube.com/embed/6YD2Pw9R7jY" class="btn btn-secondary">save video</input></div>
+    </td>
+    <td>
+        <!--dessert recipes--><iframe width="560" height="315" src="https://www.youtube.com/embed/03_EDK9Sn_E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div><button type="submit" name="6" value="https://www.youtube.com/embed/03_EDK9Sn_E" class="btn btn-secondary">save video</input></div>
+    </td>
+    </tr>
+    <tr>
+        <td>
+            <!--dessert recipe--><iframe width="560" height="315" src="https://www.youtube.com/embed/JD_h7DHoXdI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <div><button type="submit" name="7" value="https://www.youtube.com/embed/JD_h7DHoXdI" class="btn btn-secondary">save video</input></div>
+        </td>
+        <td>
+            <!--just danceid--> <iframe width="560" height="315" src="https://www.youtube.com/embed/gCzgc_RelBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div><button type="submit" name="8" value="https://www.youtube.com/embed/gCzgc_RelBA" class="btn btn-secondary">save video</input></div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eughyYPoExk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div><button type="submit" name="9" value="https://www.youtube.com/embed/eughyYPoExk" class="btn btn-secondary">save video</input></div>
+        </td>
+        <td>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zXyfhoK-oKQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div><button type="submit" name="10" value="https://www.youtube.com/embed/zXyfhoK-oKQ" class="btn btn-secondary">save video</input></div>
+        </td>
+    </tr>
+</table>
+{%endblock%}
