@@ -12,4 +12,4 @@ They can then access the website which contains:
 5. a saved videos page that allows users to see the videos that they have saved and remove videos from this page if they no longer want them saved.
 
 The purpose of the Corona Web Club is to create an easy to use hub with all the information UK citizens need to help combat the coronavirus.
-It also aims to show people how to keep active and entertained during this difficult period .# COVID-web-app
+It also aims to show people how to keep active and entertained during this difficult period .
